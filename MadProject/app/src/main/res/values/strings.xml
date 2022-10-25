@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MapProjectBook</string>
+    <string name="password">Password</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="add_image">Add Image</string>
+    <string name="register">Register</string>
+    <string name="gender">Gender</string>
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "322856695553",
+    "firebase_url": "https://madapp-ea59c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "madapp-ea59c",
+    "storage_bucket": "madapp-ea59c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322856695553:android:5531263bbca99d22dccd00",
+        "android_client_info": {
+          "package_name": "com.example.mapprojectbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322856695553-15eadq779pa551jc28e0iectgks2tmss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAZPGYvMjrM4UTo-eAIw0HWkxyMniOJvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322856695553-15eadq779pa551jc28e0iectgks2tmss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
