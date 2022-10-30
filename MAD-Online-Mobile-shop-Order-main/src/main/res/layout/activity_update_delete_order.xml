@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:ignore="NamespaceTypo"
+    android:background="@drawable/bg"
+    tools:context=".Update_Delete_Order">
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/first_name"
+        android:inputType="text"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/last_name"
+        android:inputType="text"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/phone_number"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"/>
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/quantity"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:text="@string/address"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update"
+        android:backgroundTint="#3498db"/>
+
+
+</LinearLayout>

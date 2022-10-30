@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Add_Order"
+    android:background="@drawable/bg"
+    tools:ignore="NamespaceTypo">
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Phone Number"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/quantity"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/addOrder_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/submit"
+        android:backgroundTint="#3498db"/>
+
+    <Button
+        android:id="@+id/ViewOrder_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="View Order"
+        android:backgroundTint="#3498db"/>
+
+</LinearLayout>
