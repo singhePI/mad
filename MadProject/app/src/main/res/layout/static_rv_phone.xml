@@ -18,6 +18,7 @@
         android:layout_gravity="center"
         android:id="@+id/rv_phone_img"
         android:layout_marginTop="15dp"
+        android:src="@drawable/ic_smartphone"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +44,6 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-
         android:text="desc"
         android:textSize="10sp"
         app:textAllCaps="false" />

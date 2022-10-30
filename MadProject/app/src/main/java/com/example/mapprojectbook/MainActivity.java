@@ -18,8 +18,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -81,9 +83,6 @@ public class MainActivity extends AppCompatActivity {
     private void initLogin() {
         Log.d(TAG, "initLogin: Started");
 
-        txtPromptWarmingEmail.setVisibility(View.GONE);
-        txtPromptWarmingPass.setVisibility(View.GONE);
-
         if(validateData()) {
             txtPromptWarmingEmail.setVisibility(View.GONE);
             txtPromptWarmingPass.setVisibility(View.GONE);
@@ -102,14 +101,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
-                            SharedPreferences.Editor editor = sharedpreferences.edit();
 
-                            editor.putString(EMAIL_KEY, editTextEmail.getText().toString());
-                            editor.putString(PASSWORD_KEY, editTextPass.getText().toString());
-
-                            editor.apply();
-
-                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            intent.putExtra("email", email);
+                            startActivity(intent);
                         } else {
                             Toast.makeText(MainActivity.this, "Incorrect Email or Password", Toast.LENGTH_SHORT).show();
                         }
@@ -152,6 +147,9 @@ public class MainActivity extends AppCompatActivity {
 
         editTextEmail = findViewById(R.id.editText_loginEmail);
         editTextPass = findViewById(R.id.editText_loginPass);
+
+        txtPromptWarmingEmail.setVisibility(View.GONE);
+        txtPromptWarmingPass.setVisibility(View.GONE);
     }
 
     @Override

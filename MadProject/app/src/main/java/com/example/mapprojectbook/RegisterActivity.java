@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.Room;
+
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -97,7 +97,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     editTxtUsername.getText().toString(),
                                     "null",
                                     "null",
-                                    BCrypt.hashpw(editTxtPass.getText().toString(), BCrypt.gensalt(15)),
+                                    editTxtPass.getText().toString(),
                                     "null",
                                     "null"
                             ));
@@ -149,7 +149,7 @@ public class RegisterActivity extends AppCompatActivity {
             return false;
         }
 
-        if (pass == passRe) {
+        if (!pass.equals(passRe)) {
             txtPromptWarnPassRe.setText("Password does not match");
 
             txtPromptWarnPassRe.setVisibility(View.VISIBLE);

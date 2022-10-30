@@ -1,55 +1,50 @@
 package com.example.mapprojectbook;
 
 import android.content.Intent;
-import android.os.Build;
+
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.Menu;
-import android.view.MenuInflater;
+
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
+
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mapprojectbook.databinding.ActivityHome2Binding;
+
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    private static final String TAG = "HomeActivity";
 
     private FirebaseDatabase db;
     private List<Phone> phoneList;
-    private AppBarConfiguration mAppBarConfiguration;
-    private ActivityHome2Binding binding;
+
     private DrawerLayout drawer;
+
+    private String email;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
+
+        Intent thisIntent = getIntent();
+        email = thisIntent.getExtras().getString("email");
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -101,12 +96,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Intent intent;
         switch(item.getItemId()) {
             case R.id.nav_home:
-                startActivity(new Intent(this, HomeActivity.class));
+                intent = new Intent(this, HomeActivity.class);
+                intent.putExtra("email", email);
+                startActivity(intent);
                 break;
             case R.id.nav_profile:
-                startActivity((new Intent(this, ProfileActivity.class)));
+                intent = new Intent(this, ProfileActivity.class);
+                intent.putExtra("email", email);
+                startActivity(intent);
                 break;
         }
         return true;
