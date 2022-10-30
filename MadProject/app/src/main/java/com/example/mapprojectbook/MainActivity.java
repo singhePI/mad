@@ -81,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
     private void initLogin() {
         Log.d(TAG, "initLogin: Started");
 
+        txtPromptWarmingEmail.setVisibility(View.GONE);
+        txtPromptWarmingPass.setVisibility(View.GONE);
+
         if(validateData()) {
             txtPromptWarmingEmail.setVisibility(View.GONE);
             txtPromptWarmingPass.setVisibility(View.GONE);

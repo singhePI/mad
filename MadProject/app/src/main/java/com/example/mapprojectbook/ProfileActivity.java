@@ -2,16 +2,15 @@ package com.example.mapprojectbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class EditProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
+
     EditText username, fname, lname, email, password, address, contactNo;
     Button button;
     String userEmail;
@@ -21,14 +20,8 @@ public class EditProfileActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getWindow().setSoftInputMode(
-                WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         initViews();
-        intent = getIntent();
-
-        button.setText("Update");
 
 
     }
