@@ -58,7 +58,11 @@ public class PhoneAdapter extends RecyclerView.Adapter<PhoneAdapter.PhoneHolder>
         notifyDataSetChanged();
     }
 
+<<<<<<< HEAD
     static class PhoneHolder extends RecyclerView.ViewHolder {
+=======
+    class PhoneHolder extends RecyclerView.ViewHolder {
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         private ImageView imageViewPhone;
         private TextView textViewName;
         private TextView textViewDesc;

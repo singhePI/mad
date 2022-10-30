@@ -74,7 +74,11 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_login"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.541" />
+=======
+        app:layout_constraintVertical_bias="0.115" />
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
 
     <TextView
         android:id="@+id/textView_txtSignIn"
@@ -95,28 +99,60 @@
         android:id="@+id/textView_warnEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:layout_marginEnd="296dp"
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         android:text="invalid"
         android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/editText_loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.951" />
+=======
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
 
     <TextView
         android:id="@+id/textView_warnPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="292dp"
+<<<<<<< HEAD
+=======
+        android:layout_marginEnd="296dp"
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         android:text="invalid"
         android:textColor="#DD2C00"
         app:layout_constraintBottom_toTopOf="@+id/editText_loginPass"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.416" />
+=======
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
+        android:id="@+id/googleSignIn"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:text="Sign in with Google"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

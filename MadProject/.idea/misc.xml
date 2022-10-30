@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/dynamic_rv_bg.xml" value="0.1" />
+<<<<<<< HEAD
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_image.xml" value="0.2165" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_menu_buy.xml" value="0.2165" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_menu_camera.xml" value="0.137" />
@@ -20,6 +21,20 @@
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_home2.xml" value="0.22" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+=======
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_menu_camera.xml" value="0.137" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_menu_home.xml" value="0.1" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/ic_menu_profile.xml" value="0.1" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/recyclerview_bg.xml" value="0.1" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/rv_dynamic_layout.xml" value="0.137" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/rv_selected_bg.xml" value="0.1" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/search_bg.xml" value="0.227" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/drawable/side_nav_bar.xml" value="0.137" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_home2.xml" value="0.25" />
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/app_bar_home2.xml" value="0.1" />
@@ -34,7 +49,11 @@
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/phone_items.xml" value="0.1" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/recycler_view_phone.xml" value="0.1" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/rv_dynamic_progressbar.xml" value="0.16304347826086957" />
+<<<<<<< HEAD
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/static_rv_phone.xml" value="0.33" />
+=======
+        <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/layout/static_rv_phone.xml" value="0.67" />
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/menu/activity_home2_drawer.xml" value="0.5" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/menu/home_activity2.xml" value="0.18645833333333334" />
         <entry key="..\:/GItHub/mad/MadProject/app/src/main/res/menu/menu.xml" value="0.25" />

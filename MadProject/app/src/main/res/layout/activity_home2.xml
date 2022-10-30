@@ -6,7 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+<<<<<<< HEAD
 
+=======
+    tools:openDrawer=""
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
     >
 
     <include
@@ -99,6 +103,7 @@
                     app:layout_constraintWidth_percent=".7" />
 
                 <ImageView
+<<<<<<< HEAD
                     android:id="@+id/search_icon"
                     android:layout_width="61dp"
                     android:layout_height="50dp"
@@ -112,6 +117,8 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <ImageView
+=======
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
                     android:id="@+id/imageView3"
                     android:layout_width="61dp"
                     android:layout_height="50dp"

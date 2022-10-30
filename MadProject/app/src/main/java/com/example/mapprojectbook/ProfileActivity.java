@@ -1,5 +1,6 @@
 package com.example.mapprojectbook;
 
+<<<<<<< HEAD
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -62,11 +63,30 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
 
     private User foundUser;
 
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class ProfileActivity extends AppCompatActivity {
+
+    EditText username, fname, lname, email, password, address, contactNo;
+    Button button;
+    String userEmail;
+    Intent intent;
+
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
+<<<<<<< HEAD
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         db = FirebaseDatabase.getInstance().getReference().child("Users");
@@ -257,10 +277,20 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
 
     private void populateUI(User user) {
         Log.d(TAG, "populateUI: started");
+=======
+        initViews();
+
+
+    }
+
+    private void populateUI(User user) {
+
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         if (user == null) {
             return;
         }
         username.setText((user.getUsername()));
+<<<<<<< HEAD
 
         if(fname.getText().toString().equals("null")) {
             fname.setText((" "));
@@ -296,6 +326,17 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
     private void initViews() {
         Log.d(TAG, "initViews: Started");
         image = findViewById(R.id.image);
+=======
+        fname.setText(user.getFname());
+        lname.setText(user.getLname());
+        email.setText(user.getEmail());
+        password.setText(user.getPassword());
+        contactNo.setText(user.getContactNo());
+        address.setText(user.getAddress());
+    }
+
+    private void initViews() {
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
         username = findViewById(R.id.edit_username);
         fname = findViewById(R.id.edit_fname);
         lname = findViewById(R.id.edit_lname);
@@ -304,10 +345,20 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
         address = findViewById(R.id.edit_address);
         contactNo = findViewById(R.id.edit_contactNo);
 
+<<<<<<< HEAD
         addImage = findViewById(R.id.button_addImage);
         save = findViewById(R.id.button_profileSave);
         Log.d(TAG, "initViews: Finished");
 
+=======
+        button = findViewById(R.id.save_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onSaveButtonClicked();
+            }
+        });
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
     }
 
     public void onSaveButtonClicked() {
@@ -320,6 +371,7 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
                 address.getText().toString(),
                 contactNo.getText().toString()
         );
+<<<<<<< HEAD
     }
 
     @Override
@@ -347,6 +399,9 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
         } else {
             super.onBackPressed();
         }
+=======
+
+>>>>>>> 0b1bcbd06bb6eddba55dff7f8f9ccd21762eaf0a
     }
 
 }
